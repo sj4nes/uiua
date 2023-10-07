@@ -196,7 +196,7 @@ pub fn Audio() -> impl IntoView {
         <p>"In this example, we make both a chord and a sequence from the same notes. We use "<Prim prim=Sin glyph_only=true/><Prim prim=Mul glyph_only=true/><Prim prim=Tau glyph_only=true/>" to make a sine wave instead of a saw wave."</p>
         <Editor example="\
 f ← ×220ⁿ∶2÷12 [0 4 7]
-s ← ○×τ⊞×f ÷∶⇡.&asr
+s ← 󰥛×τ⊞×f ÷∶⇡.&asr
 ÷⧻f/+s
 ÷⧻f/⊂s"/>
 
@@ -204,7 +204,7 @@ s ← ○×τ⊞×f ÷∶⇡.&asr
         <p>"If running code in the native Uiua interpreter, arrays will not be automatically turned into audio."</p>
         <p>"Instead, you must use the "<Prim prim=Sys(SysOp::AudioPlay)/>" system function to play it."</p>
         <p><Prim prim=Sys(SysOp::AudioPlay)/>" should fine on the website as well, but it is not necessary."</p>
-        <Editor example="&ap÷2×¬◿1×4∶±○×τ×55.÷∶⇡×2. &asr"/>
+        <Editor example="&ap÷2×¬◿1×4∶±󰥛×τ×55.÷∶⇡×2. &asr"/>
     }
 }
 

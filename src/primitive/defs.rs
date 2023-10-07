@@ -253,25 +253,27 @@ primitive!(
     (1, Sqrt, MonadicPervasive, ("sqrt", '√')),
     /// The sine of a number
     ///
-    /// ex: ○ 1
+    /// ex: 󰥛 1
     ///
     /// You can get a cosine function by [add]ing [eta].
-    /// ex: ○+η 1
+    /// ex: 󰥛+η 1
     ///
     /// You can get an arcsine function with [invert].
-    /// ex: ⍘○ 1
+    /// ex: ⍘󰥛 1
     ///
     /// You can get an arccosine function by [invert]ing the cosine.
-    /// ex: ⍘(○+η) 1
+    /// ex: ⍘(󰥛+η) 1
     ///
     /// You can get a tangent function by [divide]ing the [sine] by the cosine.
-    /// ex: ÷○+η∶○. 0
-    (1, Sin, MonadicPervasive, ("sine", '○')),
+    /// ex: ÷󰥛+η∶󰥛. 0
+    (1, Sin, MonadicPervasive, ("sine", '󰥛')),
     /// The cosine of a number
-    (1, Cos, MonadicPervasive),
+    (1, Cos, MonadicPervasive, ("cosine", '󱑹')),
     /// The arcsine of a number
     (1, Asin, MonadicPervasive),
     /// The arccosine of a number
+    /// You can get an arccosine function by [invert]ing the cosine.
+    /// ex: ⍘󱑹 1
     (1, Acos, MonadicPervasive),
     /// Round to the nearest integer towards `¯∞`
     ///
@@ -1108,7 +1110,7 @@ primitive!(
     /// ex: ⍘⋯ [1 0 1 0 1 0 1 0]
     ///
     /// [invert][sine] gives the arcsine.
-    /// ex: ⍘○ 1
+    /// ex: ⍘󰥛 1
     ///
     /// While more inverses exists, most of them are not useful on their own.
     /// They are usually used within [under].
